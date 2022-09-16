@@ -1,9 +1,9 @@
 {
   "metaDataInfo": {
-    "Host name": "cdp.cloudera.com",
+    "Host name": "ip-172-31-47-202.eu-central-1.compute.internal",
     "Exported by": "admin",
-    "Export time": "Feb 5, 2020 4:15:23 PM",
-    "Ranger apache version": "2.0.0.7.0.3.0-79"
+    "Export time": "Sep 16, 2022 11:10:51 AM",
+    "Ranger apache version": "2.3.0.7.1.8.0-801"
   },
   "policies": [
     {
@@ -19,11 +19,440 @@
             "*"
           ],
           "isExcludes": false,
-          "isRecursive": true
+          "isRecursive": false
         },
         "bucket": {
           "values": [
             "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        },
+        "key": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": true
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "all",
+              "isAllowed": true
+            },
+            {
+              "type": "read",
+              "isAllowed": true
+            },
+            {
+              "type": "write",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "list",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "read_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "write_acl",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "hdfs",
+            "om"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        },
+        {
+          "accesses": [
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "{OWNER}"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        },
+        {
+          "accesses": [
+            {
+              "type": "read",
+              "isAllowed": true
+            },
+            {
+              "type": "write",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "list",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "read_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "write_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "rangerlookup"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": false
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "ozone",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 20,
+      "guid": "40157d0e-4c62-4be7-83ff-609324a7111a",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_ozone",
+      "name": "all - volume",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "Policy for all - volume",
+      "isAuditEnabled": true,
+      "resources": {
+        "volume": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "all",
+              "isAllowed": true
+            },
+            {
+              "type": "read",
+              "isAllowed": true
+            },
+            {
+              "type": "write",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "list",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "read_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "write_acl",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "hdfs",
+            "om"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        },
+        {
+          "accesses": [
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "{OWNER}"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        },
+        {
+          "accesses": [
+            {
+              "type": "read",
+              "isAllowed": true
+            },
+            {
+              "type": "write",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "list",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "read_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "write_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "rangerlookup"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": false
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "ozone",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 21,
+      "guid": "a6627a6b-6979-448c-a571-7f8b9edc37a3",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_ozone",
+      "name": "all - volume, bucket",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "Policy for all - volume, bucket",
+      "isAuditEnabled": true,
+      "resources": {
+        "volume": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        },
+        "bucket": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "all",
+              "isAllowed": true
+            },
+            {
+              "type": "read",
+              "isAllowed": true
+            },
+            {
+              "type": "write",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "list",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "read_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "write_acl",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "hdfs",
+            "om"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        },
+        {
+          "accesses": [
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "{OWNER}"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        },
+        {
+          "accesses": [
+            {
+              "type": "read",
+              "isAllowed": true
+            },
+            {
+              "type": "write",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "list",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "read_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "write_acl",
+              "isAllowed": true
+            },
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "rangerlookup"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": false
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "ozone",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 22,
+      "guid": "e5eb913b-d09a-4304-be8b-a4fef4c53094",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_ozone",
+      "name": "S3_VOLUME_POLICY",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "Policy for S3_VOLUME_POLICY",
+      "isAuditEnabled": true,
+      "resources": {
+        "bucket": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        },
+        "volume": {
+          "values": [
+            "s3v"
           ],
           "isExcludes": false,
           "isRecursive": false
@@ -44,7 +473,7 @@
               "isAllowed": true
             },
             {
-              "type": "read",
+              "type": "create",
               "isAllowed": true
             },
             {
@@ -52,7 +481,7 @@
               "isAllowed": true
             },
             {
-              "type": "create",
+              "type": "read",
               "isAllowed": true
             },
             {
@@ -65,13 +494,12 @@
             }
           ],
           "users": [
-            "rangerlookup",
-            "om"
+            "hive"
           ],
           "groups": [],
           "roles": [],
           "conditions": [],
-          "delegateAdmin": true
+          "delegateAdmin": false
         }
       ],
       "denyPolicyItems": [],
@@ -85,58 +513,46 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 17,
-      "guid": "caeedb85-43f5-4434-a9f1-e1c170b26423",
+      "id": 23,
+      "guid": "b45f5caa-f47f-44f1-9493-99b6c1aa8a62",
       "isEnabled": true,
       "version": 1
     },
     {
-      "service": "cm_ozone",
-      "name": "all - volume",
+      "service": "cm_kafka_connect",
+      "name": "all - cluster",
       "policyType": 0,
       "policyPriority": 0,
-      "description": "Policy for all - volume",
+      "description": "Policy for all - cluster",
       "isAuditEnabled": true,
       "resources": {
-        "volume": {
+        "cluster": {
           "values": [
             "*"
           ],
           "isExcludes": false,
-          "isRecursive": true
+          "isRecursive": false
         }
       },
       "policyItems": [
         {
           "accesses": [
             {
-              "type": "all",
+              "type": "view",
               "isAllowed": true
             },
             {
-              "type": "read",
+              "type": "manage",
               "isAllowed": true
             },
             {
-              "type": "write",
-              "isAllowed": true
-            },
-            {
-              "type": "create",
-              "isAllowed": true
-            },
-            {
-              "type": "list",
-              "isAllowed": true
-            },
-            {
-              "type": "delete",
+              "type": "validate",
               "isAllowed": true
             }
           ],
           "users": [
-            "rangerlookup",
-            "om"
+            "streamsmsgmgr",
+            "kafka"
           ],
           "groups": [],
           "roles": [],
@@ -149,33 +565,99 @@
       "denyExceptions": [],
       "dataMaskPolicyItems": [],
       "rowFilterPolicyItems": [],
-      "serviceType": "ozone",
+      "serviceType": "kafka-connect",
       "options": {},
       "validitySchedules": [],
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 18,
-      "guid": "dab50c38-dd94-4493-8d13-b5d914e7de94",
+      "id": 36,
+      "guid": "b2e5a915-048b-4d66-b14c-1f4bc81710f7",
       "isEnabled": true,
       "version": 1
     },
     {
-      "service": "cm_ozone",
-      "name": "all - volume, bucket",
+      "service": "cm_kafka_connect",
+      "name": "all - connector",
       "policyType": 0,
       "policyPriority": 0,
-      "description": "Policy for all - volume, bucket",
+      "description": "Policy for all - connector",
       "isAuditEnabled": true,
       "resources": {
-        "volume": {
+        "connector": {
           "values": [
             "*"
           ],
           "isExcludes": false,
-          "isRecursive": true
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "view",
+              "isAllowed": true
+            },
+            {
+              "type": "manage",
+              "isAllowed": true
+            },
+            {
+              "type": "edit",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "streamsmsgmgr",
+            "kafka"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "kafka-connect",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 37,
+      "guid": "09f35af3-3484-4a58-9a8b-9cd2e803e93c",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_kudu",
+      "name": "all - database, table",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "Policy for all - database, table",
+      "isAuditEnabled": true,
+      "resources": {
+        "database": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
         },
-        "bucket": {
+        "table": {
           "values": [
             "*"
           ],
@@ -187,15 +669,23 @@
         {
           "accesses": [
             {
-              "type": "all",
+              "type": "select",
               "isAllowed": true
             },
             {
-              "type": "read",
+              "type": "insert",
               "isAllowed": true
             },
             {
-              "type": "write",
+              "type": "update",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "alter",
               "isAllowed": true
             },
             {
@@ -203,17 +693,20 @@
               "isAllowed": true
             },
             {
-              "type": "list",
+              "type": "drop",
               "isAllowed": true
             },
             {
-              "type": "delete",
+              "type": "metadata",
+              "isAllowed": true
+            },
+            {
+              "type": "all",
               "isAllowed": true
             }
           ],
           "users": [
-            "rangerlookup",
-            "om"
+            "kudu"
           ],
           "groups": [],
           "roles": [],
@@ -226,26 +719,40 @@
       "denyExceptions": [],
       "dataMaskPolicyItems": [],
       "rowFilterPolicyItems": [],
-      "serviceType": "ozone",
+      "serviceType": "kudu",
       "options": {},
       "validitySchedules": [],
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 19,
-      "guid": "d581f9c8-e60a-45a0-b743-41c6c81bd3b7",
+      "id": 52,
+      "guid": "ef34cefe-a953-463b-b0ce-d1ff9ef169d8",
       "isEnabled": true,
       "version": 1
     },
     {
-      "service": "cm_nifi",
-      "name": "all - nifi-resource",
+      "service": "cm_kudu",
+      "name": "all - database, table, column",
       "policyType": 0,
       "policyPriority": 0,
-      "description": "Policy for all - nifi-resource",
+      "description": "Policy for all - database, table, column",
       "isAuditEnabled": true,
       "resources": {
-        "nifi-resource": {
+        "database": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        },
+        "column": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        },
+        "table": {
           "values": [
             "*"
           ],
@@ -257,16 +764,44 @@
         {
           "accesses": [
             {
-              "type": "READ",
+              "type": "select",
               "isAllowed": true
             },
             {
-              "type": "WRITE",
+              "type": "insert",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "alter",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "drop",
+              "isAllowed": true
+            },
+            {
+              "type": "metadata",
+              "isAllowed": true
+            },
+            {
+              "type": "all",
               "isAllowed": true
             }
           ],
           "users": [
-            "rangerlookup"
+            "kudu"
           ],
           "groups": [],
           "roles": [],
@@ -279,14 +814,95 @@
       "denyExceptions": [],
       "dataMaskPolicyItems": [],
       "rowFilterPolicyItems": [],
-      "serviceType": "nifi",
+      "serviceType": "kudu",
       "options": {},
       "validitySchedules": [],
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 32,
-      "guid": "a606fcdf-45b1-4243-9d1b-268524947e98",
+      "id": 53,
+      "guid": "d5db66ed-16b4-48eb-a6d0-d0281a994753",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_kudu",
+      "name": "all - database",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "Policy for all - database",
+      "isAuditEnabled": true,
+      "resources": {
+        "database": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "select",
+              "isAllowed": true
+            },
+            {
+              "type": "insert",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            },
+            {
+              "type": "delete",
+              "isAllowed": true
+            },
+            {
+              "type": "alter",
+              "isAllowed": true
+            },
+            {
+              "type": "create",
+              "isAllowed": true
+            },
+            {
+              "type": "drop",
+              "isAllowed": true
+            },
+            {
+              "type": "metadata",
+              "isAllowed": true
+            },
+            {
+              "type": "all",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "kudu"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "kudu",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 54,
+      "guid": "7bf580f7-8d0c-4918-b4b1-869f796c22a3",
       "isEnabled": true,
       "version": 1
     },
@@ -296,6 +912,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - topology, service",
+      "resourceSignature": "bcdaa6d5b59d1ff76890aee0548b75e9abd1a9bb6964fa8a5157b6d37ffce8db",
       "isAuditEnabled": true,
       "resources": {
         "topology": {
@@ -342,7 +959,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 35,
+      "id": 86,
       "guid": "98ab86e1-2ccd-49e7-ae36-9de921b2bd49",
       "isEnabled": true,
       "version": 1
@@ -353,6 +970,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - path",
+      "resourceSignature": "dfe81e379022be6cadb1665e2a3883824f2bc09626557a32efa3a236609005b6",
       "isAuditEnabled": true,
       "resources": {
         "path": {
@@ -402,7 +1020,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 36,
+      "id": 87,
       "guid": "5fe0c2dc-c3fe-42eb-a830-6be3b042e849",
       "isEnabled": true,
       "version": 1
@@ -413,6 +1031,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for kms-audit-path",
+      "resourceSignature": "b349a238ab1cea962a44878de9da2231537b5b1ab65006ca892565679d6ab1e0",
       "isAuditEnabled": true,
       "resources": {
         "path": {
@@ -459,7 +1078,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 37,
+      "id": 88,
       "guid": "01a55890-6d5b-4864-8474-d621b7eb9152",
       "isEnabled": true,
       "version": 1
@@ -470,6 +1089,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "05d00b6f9281c6d18a2696cba2cbeccdbe47005c3aa0c4adf66ac1365113955f",
       "isAuditEnabled": true,
       "resources": {
         "path": {
@@ -516,7 +1136,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 38,
+      "id": 89,
       "guid": "062691f0-5b9c-4649-b35d-02abc537f889",
       "isEnabled": true,
       "version": 1
@@ -527,6 +1147,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - table, column-family, column",
+      "resourceSignature": "95b105e8d8ae812632b26539d8bfec09793853d278fc0193da8878f6fe095ef3",
       "isAuditEnabled": true,
       "resources": {
         "column-family": {
@@ -594,7 +1215,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 39,
+      "id": 90,
       "guid": "50f6bea2-09b4-41d9-a52d-2661387f57e2",
       "isEnabled": true,
       "version": 1
@@ -605,6 +1226,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for ATLAS_HBASE_TABLES",
+      "resourceSignature": "4de1305b859e11d2f37a70af1c8dc41ef29413817efb1fa3194402e9610e9438",
       "isAuditEnabled": true,
       "resources": {
         "column-family": {
@@ -670,7 +1292,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 40,
+      "id": 91,
       "guid": "a0325ff8-594d-4ae0-91ba-aaf26435cb70",
       "isEnabled": true,
       "version": 1
@@ -681,6 +1303,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "be48c63d8afee112e639ff477ff27a6dacad49eed92f040db060fe362f68d549",
       "isAuditEnabled": true,
       "resources": {
         "column-family": {
@@ -767,7 +1390,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 41,
+      "id": 92,
       "guid": "5191c8b0-7910-48aa-9015-3e8e5d886d13",
       "isEnabled": true,
       "version": 1
@@ -778,6 +1401,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - queue",
+      "resourceSignature": "ed9b305757e6a786d0b819425ba5c88375a8ec3723a6bc12d4462d70b3f33a3f",
       "isAuditEnabled": true,
       "resources": {
         "queue": {
@@ -821,7 +1445,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 42,
+      "id": 93,
       "guid": "18bf86e2-da71-4951-af0a-441160632527",
       "isEnabled": true,
       "version": 1
@@ -832,6 +1456,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "c8e62dfeca59b406f38b2e867a9b7fddc8b0b772f79b221b8638c563809087ea",
       "isAuditEnabled": true,
       "resources": {
         "queue": {
@@ -891,7 +1516,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 43,
+      "id": 94,
       "guid": "931e774e-b623-4fc3-b38b-2e1c754fd6eb",
       "isEnabled": true,
       "version": 1
@@ -902,6 +1527,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "83612acf7fb23c9b983f31dca042f3e01353a1e0dc1a1ebe60b815a3384971f3",
       "isAuditEnabled": true,
       "resources": {
         "queue": {
@@ -946,226 +1572,8 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 44,
+      "id": 95,
       "guid": "ee17c1fb-b52b-4ca8-b7be-6047a10f37d1",
-      "isEnabled": true,
-      "version": 1
-    },
-    {
-      "service": "cm_solr",
-      "name": "all - collection",
-      "policyType": 0,
-      "policyPriority": 0,
-      "description": "Policy for all - collection",
-      "isAuditEnabled": true,
-      "resources": {
-        "collection": {
-          "values": [
-            "*"
-          ],
-          "isExcludes": false,
-          "isRecursive": false
-        }
-      },
-      "policyItems": [
-        {
-          "accesses": [
-            {
-              "type": "query",
-              "isAllowed": true
-            },
-            {
-              "type": "update",
-              "isAllowed": true
-            },
-            {
-              "type": "others",
-              "isAllowed": true
-            },
-            {
-              "type": "solr_admin",
-              "isAllowed": true
-            }
-          ],
-          "users": [
-            "solr",
-            "rangerlookup"
-          ],
-          "groups": [],
-          "roles": [],
-          "conditions": [],
-          "delegateAdmin": true
-        }
-      ],
-      "denyPolicyItems": [],
-      "allowExceptions": [],
-      "denyExceptions": [],
-      "dataMaskPolicyItems": [],
-      "rowFilterPolicyItems": [],
-      "serviceType": "solr",
-      "options": {},
-      "validitySchedules": [],
-      "policyLabels": [],
-      "zoneName": "",
-      "isDenyAllElse": false,
-      "id": 45,
-      "guid": "a9bb3332-9919-4ea8-9b19-0b6fb58a619d",
-      "isEnabled": true,
-      "version": 1
-    },
-    {
-      "service": "cm_solr",
-      "name": "RANGER_AUDITS_COLLECTION",
-      "policyType": 0,
-      "policyPriority": 0,
-      "description": "Policy for RANGER_AUDITS_COLLECTION",
-      "isAuditEnabled": true,
-      "resources": {
-        "collection": {
-          "values": [
-            "ranger_audits"
-          ],
-          "isExcludes": false,
-          "isRecursive": false
-        }
-      },
-      "policyItems": [
-        {
-          "accesses": [
-            {
-              "type": "query",
-              "isAllowed": true
-            },
-            {
-              "type": "update",
-              "isAllowed": true
-            },
-            {
-              "type": "others",
-              "isAllowed": true
-            }
-          ],
-          "users": [
-            "hdfs",
-            "hbase",
-            "hive",
-            "yarn",
-            "knox",
-            "storm",
-            "kafka",
-            "nifi",
-            "atlas",
-            "impala"
-          ],
-          "groups": [],
-          "roles": [],
-          "conditions": [],
-          "delegateAdmin": false
-        },
-        {
-          "accesses": [
-            {
-              "type": "query",
-              "isAllowed": true
-            },
-            {
-              "type": "update",
-              "isAllowed": true
-            },
-            {
-              "type": "others",
-              "isAllowed": true
-            },
-            {
-              "type": "solr_admin",
-              "isAllowed": true
-            }
-          ],
-          "users": [
-            "ranger"
-          ],
-          "groups": [],
-          "roles": [],
-          "conditions": [],
-          "delegateAdmin": false
-        }
-      ],
-      "denyPolicyItems": [],
-      "allowExceptions": [],
-      "denyExceptions": [],
-      "dataMaskPolicyItems": [],
-      "rowFilterPolicyItems": [],
-      "serviceType": "solr",
-      "options": {},
-      "validitySchedules": [],
-      "policyLabels": [],
-      "zoneName": "",
-      "isDenyAllElse": false,
-      "id": 46,
-      "guid": "e23d0376-635e-45ca-81c7-0fcf9fc63a38",
-      "isEnabled": true,
-      "version": 1
-    },
-    {
-      "service": "cm_solr",
-      "name": "ATLAS_SERVICE_COLLECTIONS",
-      "policyType": 0,
-      "policyPriority": 0,
-      "description": "Policy for ATLAS_SERVICE_COLLECTIONS",
-      "isAuditEnabled": true,
-      "resources": {
-        "collection": {
-          "values": [
-            "vertex_index",
-            "edge_index",
-            "fulltext_index"
-          ],
-          "isExcludes": false,
-          "isRecursive": false
-        }
-      },
-      "policyItems": [
-        {
-          "accesses": [
-            {
-              "type": "query",
-              "isAllowed": true
-            },
-            {
-              "type": "update",
-              "isAllowed": true
-            },
-            {
-              "type": "others",
-              "isAllowed": true
-            },
-            {
-              "type": "solr_admin",
-              "isAllowed": true
-            }
-          ],
-          "users": [
-            "atlas"
-          ],
-          "groups": [],
-          "roles": [],
-          "conditions": [],
-          "delegateAdmin": false
-        }
-      ],
-      "denyPolicyItems": [],
-      "allowExceptions": [],
-      "denyExceptions": [],
-      "dataMaskPolicyItems": [],
-      "rowFilterPolicyItems": [],
-      "serviceType": "solr",
-      "options": {},
-      "validitySchedules": [],
-      "policyLabels": [],
-      "zoneName": "",
-      "isDenyAllElse": false,
-      "id": 47,
-      "guid": "1dcd3173-18b0-4633-99fb-713c2324346c",
       "isEnabled": true,
       "version": 1
     },
@@ -1175,6 +1583,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - consumergroup",
+      "resourceSignature": "8b806b6eabc6adcac1658dfcb2f95f7f2fdd2a3d2093e67f3fe4773d9562c08d",
       "isAuditEnabled": true,
       "resources": {
         "consumergroup": {
@@ -1239,7 +1648,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 100,
+      "id": 96,
       "guid": "ea12d295-4722-4664-bb3a-27e94587388c",
       "isEnabled": true,
       "version": 1
@@ -1250,6 +1659,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - topic",
+      "resourceSignature": "875e011fb314298153184b702421bff743744ff9637778aa2c8066aecc08ecc1",
       "isAuditEnabled": true,
       "resources": {
         "topic": {
@@ -1338,7 +1748,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 101,
+      "id": 97,
       "guid": "17b5b568-90c7-4807-ab5c-af2042a4713d",
       "isEnabled": true,
       "version": 1
@@ -1349,6 +1759,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - transactionalid",
+      "resourceSignature": "08c233ac88f4f6024ae516f63c9f244e65eb9a0ad4581d807fe0f66f00c1f17c",
       "isAuditEnabled": true,
       "resources": {
         "transactionalid": {
@@ -1409,7 +1820,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 102,
+      "id": 98,
       "guid": "e742ca52-050b-4c58-91df-f54c044621a3",
       "isEnabled": true,
       "version": 1
@@ -1420,6 +1831,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - cluster",
+      "resourceSignature": "f0f71572fbbecb75c249a18d593c9f16b8913a1fe67ec1e03f7e513ed857ed13",
       "isAuditEnabled": true,
       "resources": {
         "cluster": {
@@ -1508,7 +1920,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 103,
+      "id": 99,
       "guid": "2063e20d-4f96-4697-bc14-d90578855b2e",
       "isEnabled": true,
       "version": 1
@@ -1519,6 +1931,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - delegationtoken",
+      "resourceSignature": "2cb327aea1a3008ff5871618be9eec6fd9804adffa51f703889b49d465a64635",
       "isAuditEnabled": true,
       "resources": {
         "delegationtoken": {
@@ -1575,7 +1988,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 104,
+      "id": 100,
       "guid": "23965e04-5568-4c2d-a76b-e3e72aaf7afd",
       "isEnabled": true,
       "version": 1
@@ -1586,6 +1999,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for ATLAS_HOOK",
+      "resourceSignature": "62ab64de7a6f80b7218ea070cc18e4b814383a6556b1017572b566e244002ad9",
       "isAuditEnabled": true,
       "resources": {
         "topic": {
@@ -1655,7 +2069,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 105,
+      "id": 101,
       "guid": "655d1b2e-3440-4b41-922d-0654b9e0f35b",
       "isEnabled": true,
       "version": 1
@@ -1666,6 +2080,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for ATLAS_ENTITIES",
+      "resourceSignature": "1ccf2b90f80907376d4387b17c85a0c53f8ebc95ea0b8dd2db1043bf57f54975",
       "isAuditEnabled": true,
       "resources": {
         "topic": {
@@ -1731,7 +2146,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 106,
+      "id": 102,
       "guid": "0824f5c8-0c3c-4fb1-82fe-d06ede41fdd4",
       "isEnabled": true,
       "version": 1
@@ -1742,6 +2157,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for ATLAS_SPARK_HOOK",
+      "resourceSignature": "f66fbdb64a0413114c9e1575f265f6ca401b7349dd5f0060d513fd7294e49539",
       "isAuditEnabled": true,
       "resources": {
         "topic": {
@@ -1803,7 +2219,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 107,
+      "id": 103,
       "guid": "29c5561d-e443-4d69-9ff1-cd9b33c4155a",
       "isEnabled": true,
       "version": 1
@@ -1814,6 +2230,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for atlas consumergroup",
+      "resourceSignature": "b0d89626d9a2152826dc5c7ec095c65ff0900b965d34842b7a315580492757ef",
       "isAuditEnabled": true,
       "resources": {
         "consumergroup": {
@@ -1856,7 +2273,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 108,
+      "id": 104,
       "guid": "d1f7b5e8-7fc4-4705-86d8-2cb596531361",
       "isEnabled": true,
       "version": 1
@@ -1867,6 +2284,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for ranger_entities_consumer consumergroup",
+      "resourceSignature": "e054216c9589eb07a10034a2e7eb60da47b64cdad80e98aa2f180cbb5cc1b096",
       "isAuditEnabled": true,
       "resources": {
         "consumergroup": {
@@ -1909,7 +2327,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 109,
+      "id": 105,
       "guid": "de578f04-95d1-4b34-b29b-4359fe613f71",
       "isEnabled": true,
       "version": 1
@@ -1920,6 +2338,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "09c73204552750ca3a147c17127a28898ece2af985e7c21fa71f155a0e9be0e2",
       "isAuditEnabled": true,
       "resources": {
         "topic": {
@@ -1987,10 +2406,10 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 110,
+      "id": 106,
       "guid": "c1db1975-98d0-4b12-bed7-43a6f8151176",
       "isEnabled": true,
-      "version": 4
+      "version": 1
     },
     {
       "service": "cm_kafka",
@@ -1998,6 +2417,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "8ade355e70fcce1e1f8e7a00be4fb61ccd1592a27d0388cb991ddd9ec322f530",
       "isAuditEnabled": true,
       "resources": {
         "topic": {
@@ -2048,10 +2468,10 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 111,
+      "id": 107,
       "guid": "4d93e30d-555e-4351-9801-3d3ce6623938",
       "isEnabled": true,
-      "version": 3
+      "version": 1
     },
     {
       "service": "cm_kafka",
@@ -2059,6 +2479,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "allows access to console consumer",
+      "resourceSignature": "30d10786d0d3c13fd9ea16af2c797a9432157750d96b4d8acccf9116d50cef35",
       "isAuditEnabled": true,
       "resources": {
         "consumergroup": {
@@ -2101,10 +2522,10 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 152,
+      "id": 108,
       "guid": "db46b237-9065-49b5-a44b-0e1749fa3803",
       "isEnabled": true,
-      "version": 2
+      "version": 1
     },
     {
       "service": "cm_atlas",
@@ -2112,6 +2533,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - entity-type, entity-classification, entity, entity-business-metadata",
+      "resourceSignature": "cb3f8abd5d78dccb01af0eef1f16536ee021e91f3f67c04cc0abce3b3d74da07",
       "isAuditEnabled": true,
       "resources": {
         "entity-type": {
@@ -2207,7 +2629,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 31,
+      "id": 109,
       "guid": "79ef14e8-cb36-4d95-ba83-28a1bb2838da",
       "isEnabled": true,
       "version": 1
@@ -2218,6 +2640,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - entity-type, entity-classification, entity",
+      "resourceSignature": "cfa28062e015d86ccef9cae8c7deddf77f9e9b20d433efd86228ec6c5bd4bac9",
       "isAuditEnabled": true,
       "resources": {
         "entity-type": {
@@ -2330,7 +2753,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 32,
+      "id": 110,
       "guid": "ba61a395-50b8-4e3c-950d-fa12874acaad",
       "isEnabled": true,
       "version": 1
@@ -2341,6 +2764,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - entity-type, entity-classification, entity, entity-label",
+      "resourceSignature": "4d06f528b81c404a528a63e158ec844daca5b4d2b985b47e65150e7a5b25235e",
       "isAuditEnabled": true,
       "resources": {
         "entity-type": {
@@ -2440,7 +2864,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 33,
+      "id": 111,
       "guid": "35200dbf-acde-4fc8-b5dd-7b03b5031518",
       "isEnabled": true,
       "version": 1
@@ -2451,6 +2875,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - relationship-type, end-one-entity-type, end-one-entity-classification, end-one-entity, end-two-entity-type, end-two-entity-classification, end-two-entity",
+      "resourceSignature": "61c3a6849c77a161330353551b6b0d9d4feef3f38914abdcaefd35f009b6e4d5",
       "isAuditEnabled": true,
       "resources": {
         "end-one-entity-classification": {
@@ -2545,7 +2970,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 34,
+      "id": 112,
       "guid": "60494242-8e20-4b10-a25c-fe9620706a3a",
       "isEnabled": true,
       "version": 1
@@ -2556,6 +2981,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - atlas-service",
+      "resourceSignature": "18a7b8a5b4f223bf77aaf25c14f30d6461c60ec52cd44e8b89e6d13abc5bda19",
       "isAuditEnabled": true,
       "resources": {
         "atlas-service": {
@@ -2602,7 +3028,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 35,
+      "id": 113,
       "guid": "93d7c941-c6f4-488a-b93c-1d429bb5c1f8",
       "isEnabled": true,
       "version": 1
@@ -2613,6 +3039,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - type-category, type",
+      "resourceSignature": "c200eb7817dbc41a8c7800802b3a558081a32da1d84231d836fa88a8294a9b54",
       "isAuditEnabled": true,
       "resources": {
         "type-category": {
@@ -2670,7 +3097,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 36,
+      "id": 114,
       "guid": "7e1b4a30-10d0-42c4-83ce-24a7763b97eb",
       "isEnabled": true,
       "version": 1
@@ -2680,6 +3107,7 @@
       "name": "Allow users to manage favorite searches",
       "policyType": 0,
       "policyPriority": 0,
+      "resourceSignature": "fb8adb168966bcfb58305a6b7c0f2a772e27193fd73bb166f7b0cd54a99b32cd",
       "isAuditEnabled": true,
       "resources": {
         "entity-type": {
@@ -2746,7 +3174,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 37,
+      "id": 115,
       "guid": "064f9c10-9cba-4dc6-9359-16859c306129",
       "isEnabled": true,
       "version": 1
@@ -2757,6 +3185,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - database, table, column",
+      "resourceSignature": "ffd181600c642189ed345de83c0fb4649f19c4d89487a478b08bb5a88fa4602e",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -2881,7 +3310,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 62,
+      "id": 116,
       "guid": "6a6dddad-7d6f-4eec-a635-e8eb58e072c8",
       "isEnabled": true,
       "version": 1
@@ -2892,6 +3321,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for all - database, udf",
+      "resourceSignature": "a9a4ce765b10e47239e032918d1f88aadab9f6e5ca4ed9612b1f6d720f49792e",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3008,7 +3438,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 63,
+      "id": 117,
       "guid": "b1bf4bda-4742-4150-8812-a332bfb41d06",
       "isEnabled": true,
       "version": 1
@@ -3019,6 +3449,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "6210171761f8175b226e3c6e24557dde6398167e9eab22f5662d44534b2628a7",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3150,7 +3581,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 64,
+      "id": 118,
       "guid": "63a8e206-ca69-48ed-b405-98cc5abff782",
       "isEnabled": true,
       "version": 1
@@ -3161,6 +3592,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "cbd12dd50ddea2f55c2d934a725f97be8a2809c04a8954d1299bcc8dc1b3311d",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3262,7 +3694,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 65,
+      "id": 119,
       "guid": "5f725ac5-38fd-4b78-a901-e153d48306d1",
       "isEnabled": true,
       "version": 1
@@ -3273,6 +3705,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "a150a49b353e60e9fd7ebacf5a490ad5a4de3234e20c82d6817ee54155d8cfbe",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3340,7 +3773,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 66,
+      "id": 120,
       "guid": "6cc65946-b1a1-47a8-b8be-237107026a9e",
       "isEnabled": true,
       "version": 1
@@ -3351,6 +3784,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "0e702c65570cf90d7fb4205ad2d0fc0a0ec7bb40c01a6c5647858f7c02ab02f3",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3411,7 +3845,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 67,
+      "id": 121,
       "guid": "8d4db3fd-97f4-431c-9d17-e8507ae3ab1e",
       "isEnabled": true,
       "version": 1
@@ -3422,6 +3856,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "ab7f523129d0aa97e31279ffb7650513897a3be404c4eb74eca178beefab0dd9",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3471,7 +3906,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 68,
+      "id": 122,
       "guid": "8fa624c9-c99c-414e-9311-6a50ca76b8a6",
       "isEnabled": true,
       "version": 1
@@ -3482,6 +3917,7 @@
       "policyType": 2,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "e7567f801e6c8c99f9aba2840b00490badcb2e291244392acc41fd77f340dc3e",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3550,7 +3986,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 69,
+      "id": 123,
       "guid": "a72c1ce8-0ec2-48b1-a7f3-57fc2d56bc81",
       "isEnabled": false,
       "version": 1
@@ -3561,6 +3997,7 @@
       "policyType": 1,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "858481ea8d839da03c25ffd0341945015e3f60ae1ffd0235a35e3ff6ba7981a2",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3616,7 +4053,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 70,
+      "id": 124,
       "guid": "99d2537b-01e5-4503-a3c9-f89dfe82c9d7",
       "isEnabled": true,
       "version": 1
@@ -3627,6 +4064,7 @@
       "policyType": 1,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "d2e5ac0ba41a97083edd00c2095627aeead7c1fc4c21b5e5cc1c55a86ab04db9",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3682,7 +4120,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 71,
+      "id": 125,
       "guid": "f0980759-3b51-466d-9d2e-de3628fdd74d",
       "isEnabled": true,
       "version": 1
@@ -3693,6 +4131,7 @@
       "policyType": 1,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "40d3624f260bd70d25706cb512a85970233c4f6b439af44572b615bf29c25fd3",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3749,7 +4188,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 72,
+      "id": 126,
       "guid": "543342d3-eed6-413c-8d95-e70ad64d08ce",
       "isEnabled": false,
       "version": 1
@@ -3760,6 +4199,7 @@
       "policyType": 1,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "f01763ec450c7e2e7466d7c0821863b87fac63989fae3d7b3133c1567db780d7",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3815,7 +4255,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 73,
+      "id": 127,
       "guid": "781c4fb9-b898-47ae-8588-5d234353ccad",
       "isEnabled": true,
       "version": 1
@@ -3826,6 +4266,7 @@
       "policyType": 1,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "9e1a22b2dccb895ff3765d0f13369dd14b1b27a02063f3432499be58242a2664",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3882,7 +4323,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 74,
+      "id": 128,
       "guid": "4a8eebe8-2739-43ff-abb9-b781a7841a70",
       "isEnabled": true,
       "version": 1
@@ -3893,6 +4334,7 @@
       "policyType": 1,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "8981ff71e7cd636d7bf41ba0d54526eb9ce715fb103f9dd5142454fb32685075",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -3949,7 +4391,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 75,
+      "id": 129,
       "guid": "4d4b99a7-dea2-4f08-ad2d-6413f5cc6d48",
       "isEnabled": true,
       "version": 1
@@ -3960,6 +4402,7 @@
       "policyType": 2,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "c16f68d68eda8418a77adcf267bd4cb389d5b073e500295ac70aa00f3d4c8ff2",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4047,7 +4490,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 76,
+      "id": 130,
       "guid": "31ffdfa2-5ef7-48f1-b745-8c8569f67fc3",
       "isEnabled": true,
       "version": 1
@@ -4058,6 +4501,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "cb903c0ead10e2d449d7c7cdced854a1b7d5c04ec094534bebd3bb29bbf9d299",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4113,7 +4557,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 77,
+      "id": 131,
       "guid": "9d685472-93b3-49b2-8498-fbe5a1162848",
       "isEnabled": false,
       "version": 1
@@ -4124,6 +4568,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "76e1f80c1c9d13b4af0453548eba28de6268ef6a61d4dcaa09b176786f3023d4",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4217,7 +4662,9 @@
       "dataMaskPolicyItems": [],
       "rowFilterPolicyItems": [],
       "serviceType": "hive",
-      "options": {},
+      "options": {
+        "POLICY_VALIDITY_SCHEDULES": "[{\"startTime\":\"2018/07/19 00:00:45\",\"endTime\":\"2018/07/20 23:00:48\",\"recurrences\":[]}]"
+      },
       "validitySchedules": [
         {
           "startTime": "2018/07/19 00:00:45",
@@ -4230,7 +4677,7 @@
       ],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 78,
+      "id": 132,
       "guid": "ec2f5856-66f1-4cbb-afaa-815f5200f001",
       "isEnabled": true,
       "version": 1
@@ -4241,6 +4688,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "5a7c111d608091e04e76d3a389ca534312dc955f489dc03d1dd2407b5e0b9474",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4321,7 +4769,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 79,
+      "id": 133,
       "guid": "725390b6-c237-4edc-8b75-b7a359582fbb",
       "isEnabled": false,
       "version": 1
@@ -4332,6 +4780,7 @@
       "policyType": 0,
       "policyPriority": 1,
       "description": "",
+      "resourceSignature": "ba8c44a7ff34ad520245afaf1116cd7279bd29baa9ade90f2b819a1fdebc87f1",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4379,7 +4828,9 @@
       "dataMaskPolicyItems": [],
       "rowFilterPolicyItems": [],
       "serviceType": "hive",
-      "options": {},
+      "options": {
+        "POLICY_VALIDITY_SCHEDULES": "[{\"startTime\":\"2018/05/01 06:00:31\",\"endTime\":\"2019/08/31 00:00:31\",\"recurrences\":[]}]"
+      },
       "validitySchedules": [
         {
           "startTime": "2018/05/01 06:00:31",
@@ -4392,7 +4843,7 @@
       ],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 80,
+      "id": 134,
       "guid": "66f83a4b-20be-4e22-ab24-d30e0ae88a7d",
       "isEnabled": true,
       "version": 1
@@ -4403,6 +4854,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "d4f641668f84346b7fa2e46b69141ec8f82b1694b815666e62e542139a03911a",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4457,7 +4909,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 81,
+      "id": 135,
       "guid": "c8090b62-51ce-4004-809d-9b0b8c65c76f",
       "isEnabled": true,
       "version": 1
@@ -4468,6 +4920,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "15ee626287aefc7b7138956dc31637e62699553e685f334316fe9349789f2990",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4522,7 +4975,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 82,
+      "id": 136,
       "guid": "35c33704-7196-4862-8423-8f04799922df",
       "isEnabled": true,
       "version": 1
@@ -4533,6 +4986,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "7606a5107e49a4ca471d4423daadda1fb330b97674b9092eefe568c5e0f781ae",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4585,7 +5039,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 83,
+      "id": 137,
       "guid": "69f884df-4960-49d9-9918-5c8daca0ef48",
       "isEnabled": true,
       "version": 1
@@ -4596,6 +5050,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "a6a328c623a4eb15d84ccf34df65c83acba3c59c7df4a601780b1caa153aa870",
       "isAuditEnabled": true,
       "resources": {
         "url": {
@@ -4690,7 +5145,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 84,
+      "id": 138,
       "guid": "ae633015-6ee3-480a-8325-bf40398d3ec9",
       "isEnabled": true,
       "version": 1
@@ -4701,6 +5156,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "7b67e1ab9cbc3011d86faad9d1acc488ef0eb097dcf178a2b49b8e6343e8c107",
       "isAuditEnabled": true,
       "resources": {
         "global": {
@@ -4795,7 +5251,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 85,
+      "id": 139,
       "guid": "62262643-7c0d-493b-962b-63f7f3f5d749",
       "isEnabled": true,
       "version": 1
@@ -4806,6 +5262,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "c052be6821aab8eaad336c15ac58111b27f1b9186353c072d6887497d4b72185",
       "isAuditEnabled": true,
       "resources": {
         "hiveservice": {
@@ -4898,7 +5355,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 86,
+      "id": 140,
       "guid": "bd80c92f-56c1-480c-af0d-581c854e79e8",
       "isEnabled": true,
       "version": 1
@@ -4909,6 +5366,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "5e88f45a2ffe1bf485769b85caea09b19ee596f2f15e4467945ed2aa18be1879",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -4969,7 +5427,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 87,
+      "id": 141,
       "guid": "4473231c-d6bc-4519-96df-6c8c530de1fb",
       "isEnabled": false,
       "version": 1
@@ -4980,6 +5438,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "c34180a9a536a48739ae2bf7a004ff5a983797cbeb3a3a9df6e1e1ec5b5990a6",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -5032,7 +5491,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 88,
+      "id": 142,
       "guid": "7f4afc2b-d584-4c7b-ad0c-0ef197eab482",
       "isEnabled": false,
       "version": 1
@@ -5043,6 +5502,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "b402db733720bfb0a67835a3422efed5b27d43fcbddd843ce21e234082052489",
       "isAuditEnabled": true,
       "resources": {
         "url": {
@@ -5133,7 +5593,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 89,
+      "id": 143,
       "guid": "c20f4225-d1ab-45f5-9915-3c3e6acf2b73",
       "isEnabled": true,
       "version": 1
@@ -5144,6 +5604,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "6953543a4b66b6f2035924da5ab162724650a6b3e6ef0049c02819d894bc72a5",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -5211,7 +5672,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 90,
+      "id": 144,
       "guid": "15ad924f-b576-4a9d-905b-dd3fd6a7b532",
       "isEnabled": true,
       "version": 1
@@ -5222,6 +5683,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "ae84bfb2ea30aed7571ac7d10c68e30084fb38933ff1d7fca41a833e105bd6bb",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -5289,7 +5751,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 91,
+      "id": 145,
       "guid": "9bf46dca-c952-42ee-ad7f-243b9579b7e3",
       "isEnabled": true,
       "version": 1
@@ -5300,6 +5762,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "",
+      "resourceSignature": "8f0469032455ec22990f1134ae1ea5f40e1e2c6ceb58f97e00b36e519afe6294",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -5354,7 +5817,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 92,
+      "id": 146,
       "guid": "432a1b14-9189-409b-9c91-2e18045e044e",
       "isEnabled": true,
       "version": 1
@@ -5365,6 +5828,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for public demo data airline_ontime_orc",
+      "resourceSignature": "39fe31a64c646692d06e42eb608213fe71bacfb8dbd4790b8ffdc87fff9f0b7a",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -5417,7 +5881,7 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 93,
+      "id": 147,
       "guid": "8484021f-731d-445c-a00a-8bb8f3057d40",
       "isEnabled": true,
       "version": 1
@@ -5428,6 +5892,7 @@
       "policyType": 0,
       "policyPriority": 0,
       "description": "Policy for public demo data airline_ontime_parquet",
+      "resourceSignature": "1007db1c15354d5ed22536dd7204748968e8955aca7df74305a8a8dbdeb76a10",
       "isAuditEnabled": true,
       "resources": {
         "database": {
@@ -5480,8 +5945,257 @@
       "policyLabels": [],
       "zoneName": "",
       "isDenyAllElse": false,
-      "id": 94,
+      "id": 148,
       "guid": "f1b18ebd-2daa-488a-81e2-831ad3943550",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_solr",
+      "name": "all - collection",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "",
+      "resourceSignature": "b2f44bc8981641c5afb20bb8561ede30c2a0211ab91818a975677fabf35e5b12",
+      "isAuditEnabled": true,
+      "resources": {
+        "collection": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "query",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "solr",
+            "rangerlookup"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "solr",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 149,
+      "guid": "e26ef59e-85d6-451f-b812-134a49a08c0f",
+      "isEnabled": true,
+      "createdBy": "Admin",
+      "updatedBy": "Admin",
+      "version": 2
+    },
+    {
+      "service": "cm_solr",
+      "name": "all - collection admin",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "",
+      "resourceSignature": "217ea0f3a46f347e055088a9418291595af70c473ad18d4d70dfe555d9243c33",
+      "isAuditEnabled": true,
+      "resources": {
+        "admin": {
+          "values": [
+            "*"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "query",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "solr",
+            "rangerlookup"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "solr",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "zoneName": "",
+      "isDenyAllElse": false,
+      "id": 150,
+      "guid": "03939f9b-2522-46c5-85ba-770192e22d08",
+      "isEnabled": true,
+      "createdBy": "Admin",
+      "updatedBy": "Admin",
+      "version": 2
+    },
+    {
+      "service": "cm_solr",
+      "name": "RANGER_AUDITS_COLLECTION",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "",
+      "resourceSignature": "ae34ec4b148fe7a9b06ae03f93f6a95b4ea02664aa996660a9f2c181b7fb3854",
+      "isAuditEnabled": true,
+      "resources": {
+        "collection": {
+          "values": [
+            "ranger_audits"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "query",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "hbase",
+            "hdfs",
+            "hive",
+            "yarn",
+            "knox",
+            "kafka",
+            "nifi",
+            "atlas",
+            "impala"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": false
+        },
+        {
+          "accesses": [
+            {
+              "type": "query",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "ranger"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "solr",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "isDenyAllElse": false,
+      "id": 151,
+      "guid": "3b592299-41a0-4e12-b4b0-f1435d405417",
+      "isEnabled": true,
+      "version": 1
+    },
+    {
+      "service": "cm_solr",
+      "name": "ATLAS_SERVICE_COLLECTIONS",
+      "policyType": 0,
+      "policyPriority": 0,
+      "description": "Policy for ATLAS_SERVICE_COLLECTIONS",
+      "resourceSignature": "ac3d63066be5c94589b0d79cc32fda1eb48f351f5de7ee4bbf37d60b3a544926",
+      "isAuditEnabled": true,
+      "resources": {
+        "collection": {
+          "values": [
+            "vertex_index",
+            "edge_index",
+            "fulltext_index"
+          ],
+          "isExcludes": false,
+          "isRecursive": false
+        }
+      },
+      "policyItems": [
+        {
+          "accesses": [
+            {
+              "type": "query",
+              "isAllowed": true
+            },
+            {
+              "type": "update",
+              "isAllowed": true
+            }
+          ],
+          "users": [
+            "atlas"
+          ],
+          "groups": [],
+          "roles": [],
+          "conditions": [],
+          "delegateAdmin": true
+        }
+      ],
+      "denyPolicyItems": [],
+      "allowExceptions": [],
+      "denyExceptions": [],
+      "dataMaskPolicyItems": [],
+      "rowFilterPolicyItems": [],
+      "serviceType": "solr",
+      "options": {},
+      "validitySchedules": [],
+      "policyLabels": [],
+      "isDenyAllElse": false,
+      "id": 152,
+      "guid": "51d11fc7-098e-4ff9-8da2-5de8b6654f88",
       "isEnabled": true,
       "version": 1
     }
@@ -5490,5 +6204,5 @@
   "pageSize": 0,
   "totalCount": 0,
   "resultSize": 0,
-  "queryTimeMS": 1580919323130
+  "queryTimeMS": 1663326651183
 }
